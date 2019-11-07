@@ -67,7 +67,6 @@
   font-size: 90px;
   font-weight: 700;
   margin-bottom: 20px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -216,7 +215,6 @@
 
 .sns {
   box-sizing: border-box;
-  font-size: 0;
   color: #74cfae;
   font-size: 40px;
   display: inline-block;
@@ -238,10 +236,8 @@
   background-color: #74cfae;
   color: #fff;
   padding: 20px 0 25px;
-  position: relative;
 }
 
 .copy-rights {
-  display: flex;
-  justify-content: flex-end;
+  text-align: right;
 }
