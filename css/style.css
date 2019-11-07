@@ -7,6 +7,8 @@
 
 .body {
   width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .inner {
@@ -70,9 +72,14 @@
   background-color: #74cfae;
 }
 
-.main_items {
+.main_content_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
-  float: left;
+}
+
+.main_items {
   width: 50%;
 }
 
@@ -85,21 +92,16 @@
   padding-top: 50px;
 }
 
-.what_we_can_do {
-  position: relative;
-}
-
 .main_title {
   font-size: 24px;
-  position: absolute;
-  top: 110px;
   text-align: center;
 }
 
 .main_phrases {
+  font-size: 20px;
   padding-top: 35px;
-  position: absolute;
-  top: 145px;
+  line-height: 20px;
+  text-align: center;
 }
 
 /* OUR LATEST WORK */
@@ -201,11 +203,12 @@
 
 .sns-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .sns {
+  font-size: 0;
   color: #74cfae;
   font-size: 40px;
   display: inline-block;
@@ -232,5 +235,4 @@
 .copy-rights {
   display: flex;
   justify-content: flex-end;
-
 }
