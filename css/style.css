@@ -7,8 +7,11 @@
 
 .body {
   width: 100%;
-  font-family: 'Lato', sans-serif;
   font-family: 'Raleway', sans-serif;
+}
+
+.small-captions {
+  font-family: 'Lato', sans-serif;
 }
 
 .inner {
@@ -20,19 +23,20 @@
 
 .header {
   background-color: #fff;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
   z-index: 100;
 }
 
-.header_innner {
-  position: relative;
+.header_inner {
+  display: flex;
+  justify-content: space-between;
 }
 
 .fa-bolt {
   color: #4e4e4e;
   font-size: 40px;
-  padding: 15px 0;
 }
 
 .contact_botton {
@@ -40,17 +44,18 @@
   font-size: 12px;
   background-color: #74cfae;
   padding: 14px 12px;
-  position: absolute;
-  top: 15px;
-  left: 90%;
+  transition: all 0.3s;
 }
 
 .contact_botton:hover {
   color: #333;
-  transition: all 0.3s;
 }
 
 /* BOLT THEME */
+
+.main {
+
+}
 
 .theme {
   background-color: #f2f2f2;
@@ -76,6 +81,7 @@
 
 .main_content {
   background-color: #74cfae;
+  padding-top: 50px;
 }
 
 .main_content_inner {
@@ -92,10 +98,6 @@
 .iphone-box {
   display: flex;
   justify-content: center;
-}
-
-.iphone {
-  padding-top: 50px;
 }
 
 .main_title {
@@ -115,10 +117,10 @@
 .latest_work {
   background-color: #f2f2f2;
   color: #333;
+  padding: 60px 0 70px;
 }
 
 .latest_work_inner {
-  padding: 60px 0 70px;
   margin: 0 auto;
 }
 
@@ -135,27 +137,18 @@
   margin-top: 80px;
   margin-left: 100px;
   opacity: 0.7;
+  transition: all 0.3s;
 }
 
 .portfolio-box:hover {
   opacity: 1;
-  transition: all 0.3s;
 }
 
-.portfolio-box:nth-child(1) {
-  margin-left: 0;
+.portfolio-box:nth-child(-n + 3) {
   margin-top: 0;
 }
 
-.portfolio-box:nth-child(2) {
-  margin-top: 0;
-}
-
-.portfolio-box:nth-child(3) {
-  margin-top: 0;
-}
-
-.portfolio-box:nth-child(4) {
+.portfolio-box:nth-child(3n + 1) {
   margin-left: 0;
 }
 
@@ -176,11 +169,11 @@
   font-size: 12px;
   background-color: #74cfae;
   padding: 14px 20px;
+  transition: all 0.3s;
 }
 
 .email_me:hover {
   color: #333;
-  transition: all 0.3s;
 }
 
 /* OUR SKILLS */
@@ -199,9 +192,6 @@
 .skill-box {
   display: flex;
   justify-content: space-around;
-}
-
-.skill_kinds {
   margin-top: 50px;
 }
 
@@ -225,6 +215,7 @@
 }
 
 .sns {
+  box-sizing: border-box;
   font-size: 0;
   color: #74cfae;
   font-size: 40px;
@@ -233,12 +224,12 @@
   vertical-align: middle;
   padding: 20px;
   width: 185px;
+  transition: all 0.3s;
 }
 
 .sns:hover {
   background-color: #fff;
   cursor: pointer;
-  transition: all 0.3s;
 }
 
 /* footer */
