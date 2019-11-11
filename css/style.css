@@ -161,6 +161,10 @@ body {
   margin-left: 0;
 }
 
+.pictures {
+  display: block;
+}
+
 .message {
   margin-top: 90px;
   display: flex;
