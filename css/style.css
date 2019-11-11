@@ -39,6 +39,10 @@
   font-size: 40px;
 }
 
+.fa-bars {
+    display: none;
+  }
+
 .contact_botton {
   color: #fff;
   font-size: 12px;
@@ -240,4 +244,128 @@
 
 .copy-rights {
   text-align: right;
+}
+
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width:1200px) {
+
+  .fa-bars {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:1199px) {
+
+  .inner {
+    width: 97%;
+  }
+
+  /* HEADER */
+
+  .fa-bars {
+    display: none;
+  }
+
+  /* WHAT WE CAN DO */
+
+  .main_content_inner {
+    display: block;
+  }
+
+  .main_content {
+    padding-bottom: 25px;
+  }
+
+  .main_items {
+    width: 100%;
+  }
+
+  .main_title{
+    margin-top: 20px;
+  }
+
+  /* OUR LATEST WORK */
+
+  .portfolio-box {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .portfolio-box:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+
+  .portfolio-box:nth-child(3n + 1) {
+    margin-left: auto;
+  }
+
+  .message {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email_me_message {
+    margin-right: 0;
+  }
+
+  .email_me {
+    width: 60px;
+    margin-top: 40px;
+  }
+
+  /* OUR SKILLS */
+
+  .skill-box {
+    display: block;
+  }
+
+  .skill_kinds {
+    padding-bottom: 88px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+
+  .inner {
+    width: 97%;
+  }
+
+  /* header */
+
+  .contact_botton {
+    display: none;
+  }
+
+  .fa-bars {
+    color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .sns-box {
+    display: block;
+  }
+
+  .theme {
+    padding: 160px 0 130px;
+  }
+
+  .social_media {
+    padding: 50px 0;
+  }
+
+  .sns {
+    width: 100%;
+    padding: 40px;
+  }
+
 }
