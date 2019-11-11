@@ -1,11 +1,15 @@
 
+img {
+  vertical-align: top;
+}
+
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
 }
 
-.body {
+body {
   width: 100%;
   font-family: 'Raleway', sans-serif;
 }
@@ -34,12 +38,12 @@
   justify-content: space-between;
 }
 
-.fa-bolt {
+.lightning {
   color: #4e4e4e;
   font-size: 40px;
 }
 
-.fa-bars {
+.hm-menu {
   display: none;
 }
 
@@ -135,8 +139,6 @@
 
 .portfolio-box {
   float: left;
-  height: 300px;
-  width: 300px;
   margin-top: 80px;
   margin-left: 100px;
   opacity: 0.7;
@@ -223,7 +225,6 @@
   font-size: 40px;
   display: inline-block;
   text-align: center;
-  vertical-align: middle;
   padding: 20px;
   width: 185px;
   transition: all 0.3s;
@@ -249,24 +250,10 @@
 
 /* レスポンシブ対応 */
 
-@media screen and (max-width:1200px) {
-
-  .fa-bars {
-    display: none;
-  }
-
-}
-
 @media screen and (max-width:1199px) {
 
   .inner {
     width: 97%;
-  }
-
-  /* HEADER */
-
-  .fa-bars {
-    display: none;
   }
 
   /* WHAT WE CAN DO */
@@ -289,22 +276,23 @@
 
   /* OUR LATEST WORK */
 
+  .portfolio-icons {
+    display: block;
+    text-align: center;
+  }
+
   .portfolio-box {
     float: none;
     display: block;
     margin: 0 auto;
   }
 
-  .portfolio-box:nth-child(3n) {
-    margin-bottom: 80px;
-  }
-
   .portfolio-box:nth-child(3n + 1) {
-    margin-left: auto;
+    margin-top: 80px;
   }
 
   .message {
-    margin-top: 0;
+    margin-top: 80px;
     flex-direction: column;
     align-items: center;
   }
@@ -325,17 +313,17 @@
   }
 
   .skill_kinds {
-    padding-bottom: 88px;
+    margin-bottom: 88px;
     text-align: center;
+  }
+
+  .skill_kinds:last-child {
+    margin-bottom: 30px;
   }
 
 }
 
 @media screen and (max-width:767px) {
-
-  .inner {
-    width: 97%;
-  }
 
   /* header */
 
@@ -343,7 +331,7 @@
     display: none;
   }
 
-  .fa-bars {
+  .hm-menu {
     color: #f2f2f2;
     border: 1px solid #ddd;
     border-radius: 4px;
