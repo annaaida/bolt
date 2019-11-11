@@ -59,6 +59,10 @@ body {
   color: #333;
 }
 
+.contact_botton, .email_me {
+  text-decoration: none;
+}
+
 /* BOLT THEME */
 
 .main {
@@ -276,19 +280,23 @@ body {
 
   /* OUR LATEST WORK */
 
-  .portfolio-icons {
-    display: block;
-    text-align: center;
-  }
-
   .portfolio-box {
     float: none;
     display: block;
     margin: 0 auto;
+    text-align: center;
   }
 
   .portfolio-box:nth-child(3n + 1) {
     margin-top: 80px;
+  }
+
+  .portfolio-box:first-child {
+    margin-top: 0;
+  }
+
+  .pictures {
+    display: inline-block;
   }
 
   .message {
@@ -318,7 +326,15 @@ body {
   }
 
   .skill_kinds:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 0;
+  }
+
+  .sns-item {
+    width: 25%;
+  }
+
+  .sns {
+    width: 100%;
   }
 
 }
@@ -351,9 +367,10 @@ body {
     padding: 50px 0;
   }
 
-  .sns {
+
+  .sns-item {
     width: 100%;
-    padding: 40px;
   }
+
 
 }
